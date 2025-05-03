@@ -1,0 +1,58 @@
+# Arquivos de ambiente
+.env
+
+# Diretórios de saída
+output/
+__pycache__/
+
+# Arquivos de cache
+*.pyc
+.DS_Store
+cache/
+
+# Ambiente virtual
+venv/
+env/
+.venv/
+
+# Arquivos de configuração do IDE
+.idea/
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos grandes
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+*.mkv
+
+# Node modules
+node_modules/
+node_modules/**/*
+
+# Arquivos de dados
+data/
+
+# Arquivos de script gerados
+scripts/
+
+# Arquivos de referência
+reference/
+reference/**/*
+
+# Arquivos de teste
+test_*.py
+
+# Arquivos de configuração
+config/
+
+# Arquivos de clone
+CloneRapidinha/
+
+# Arquivos de pacote
+package-lock.json
