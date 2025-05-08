@@ -45,11 +45,13 @@ scripts/
 reference/
 reference/**/*
 
-# Arquivos de teste
-test_*.py
+# Arquivos de teste temporários
+# Comentado para permitir os scripts de teste
+# test_*.py
 
-# Arquivos de configuração
-config/
+# Arquivos de configuração sensíveis
+# Comentado para permitir os arquivos de configuração
+# config/
 
 # Arquivos de clone
 CloneRapidinha/
