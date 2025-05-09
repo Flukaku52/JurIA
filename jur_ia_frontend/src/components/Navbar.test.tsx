@@ -53,9 +53,9 @@ describe('Navbar Component', () => {
     expect(screen.getByText('Registrar')).toBeInTheDocument();
     
     // Não deve mostrar links para usuários autenticados
-    expect(screen.queryByText('Consulta')).not.toBeInTheDocument();
+    expect(screen.queryByText('Nova Consulta')).not.toBeInTheDocument();
     expect(screen.queryByText('Histórico')).not.toBeInTheDocument();
-    expect(screen.queryByText('Sair')).not.toBeInTheDocument();
+    expect(screen.queryByText('Logout')).not.toBeInTheDocument();
   });
   
   it('deve renderizar corretamente quando o usuário está autenticado', () => {
@@ -81,9 +81,9 @@ describe('Navbar Component', () => {
     
     // Verificações
     expect(screen.getByText('JurIA')).toBeInTheDocument();
-    expect(screen.getByText('Consulta')).toBeInTheDocument();
+    expect(screen.getByText('Nova Consulta')).toBeInTheDocument();
     expect(screen.getByText('Histórico')).toBeInTheDocument();
-    expect(screen.getByText('Sair')).toBeInTheDocument();
+    expect(screen.getByText('Logout')).toBeInTheDocument();
     
     // Não deve mostrar links para usuários não autenticados
     expect(screen.queryByText('Login')).not.toBeInTheDocument();
