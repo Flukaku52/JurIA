@@ -115,7 +115,41 @@ A busca de regulamentações funciona da seguinte forma:
    - Regulamentações ordenadas por relevância
    - Detalhes completos incluindo requisitos, restrições e documentação necessária
 
+## Melhorias Implementadas (19/06/2023)
+
+Foram realizadas várias melhorias no frontend da aplicação JurIA:
+
+### 1. Tipagem Aprimorada
+- Utilizamos `import type` para importar tipos, melhorando a consistência do código e eliminando alertas do linter
+- Corrigimos tipagem em diversos componentes para maior segurança de tipo
+- Adicionamos tipos específicos para cada parte da aplicação
+
+### 2. Gerenciamento de Estado Global
+- Implementamos Zustand para gerenciamento de estado global, substituindo o gerenciamento local
+- Criamos a store de consultas jurídicas (`consultaStore`) para centralizar a lógica de negócio
+- Separamos as preocupações entre componentes de UI e lógica de estado
+
+### 3. Testes Unitários
+- Configuração do Vitest para executar testes unitários
+- Criamos testes para o componente Navbar, verificando diferentes estados de autenticação
+- Adicionamos configuração do Jest DOM para asserções de DOM
+- Criamos scripts no package.json para facilitar a execução dos testes
+
+### 4. Otimização de Performance
+- Utilizamos React.memo para evitar renderizações desnecessárias de componentes
+- Implementamos useCallback para memoizar funções e evitar recriações
+- Adicionamos useMemo para memoizar valores computados e partes da UI
+- Refatoramos componentes para dividir responsabilidades e melhorar a manutenção
+
 ## Próximos Passos
+
+Com as melhorias implementadas, os próximos passos incluem:
+
+1. **Expandir cobertura de testes** - Adicionar testes para todos os componentes principais
+2. **Testes de integração** - Implementar testes que verificam a integração entre componentes
+3. **Cache para consultas** - Implementar estratégias de cache para consultas frequentes
+4. **Lazy loading** - Utilizar React.lazy para carregar componentes sob demanda
+5. **Acessibilidade** - Melhorar a acessibilidade da aplicação seguindo WCAG
 
 ### Melhorias Imediatas (1-2 meses)
 
