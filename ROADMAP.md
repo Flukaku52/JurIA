@@ -29,6 +29,7 @@
   - [ ] Implementar busca semântica em documentos legais
   - [ ] Conectar com API de LLM (OpenAI/Claude) para análise de textos jurídicos
   - [ ] Adicionar banco de dados (PostgreSQL)
+  - [ ] **NOVO:** Implementar módulo básico de direito internacional
 
 - **Frontend**
   - [ ] Criar página de login e cadastro de usuários
@@ -36,6 +37,7 @@
   - [ ] Implementar componente de upload e análise de documentos
   - [ ] Adicionar página de resultados de busca para referências legais
   - [ ] Criar visualização de histórico de pesquisas
+  - [ ] **NOVO:** Adicionar seção para consultas de direito internacional
 
 - **Testes**
   - [ ] Adicionar testes unitários para backend (pytest)
@@ -48,12 +50,16 @@
   - [ ] Módulo de perguntas e respostas sobre casos jurídicos
   - [ ] Geração de relatórios e documentos legais
   - [ ] Implementar sistema de notificações personalizadas
+  - [ ] **NOVO:** Base de conhecimento avançada sobre Legislação de Singapura
+  - [ ] **NOVO:** Sistema especializado em políticas alfandegárias internacionais
+  - [ ] **NOVO:** Comparativo de legislações entre países
 
 - **Melhorias Técnicas**
   - [ ] Implementar CI/CD via GitHub Actions
   - [ ] Containerização com Docker
   - [ ] Configurar ambientes de staging e produção
   - [ ] Otimização de performance do backend e frontend
+  - [ ] **NOVO:** Sistema de atualização automática da base de conhecimento jurídico internacional
 
 ### Longo Prazo (6+ meses)
 - **Expansão do Produto**
@@ -62,6 +68,31 @@
   - [ ] Sistema de assinaturas e monetização
   - [ ] Integração com serviços jurídicos existentes
   - [ ] Suporte multi-idioma para internacionalização
+  - [ ] **NOVO:** Ferramentas de análise de conformidade alfandegária
+  - [ ] **NOVO:** Sistema de alertas para mudanças na legislação internacional
+  - [ ] **NOVO:** Assistente de elaboração de contratos internacionais
+
+## Módulos Especializados (Novos)
+
+### Direito Internacional e Comércio Global
+- [ ] Base de dados de tratados e acordos internacionais
+- [ ] Legislação de importação e exportação
+- [ ] Acordos de livre comércio e suas implicações
+- [ ] Análise de tarifas e impostos internacionais
+
+### Legislação de Singapura
+- [ ] Estrutura legal e regulatória de Singapura
+- [ ] Leis comerciais e empresariais
+- [ ] Regulamentações de investimento estrangeiro
+- [ ] Sistema tributário de Singapura
+- [ ] Resolução de disputas comerciais
+
+### Políticas Alfandegárias
+- [ ] Classificação de mercadorias (HS Codes)
+- [ ] Regimes aduaneiros especiais
+- [ ] Documentação para importação/exportação
+- [ ] Cálculo de taxas e impostos aduaneiros
+- [ ] Requisitos de compliance em diferentes jurisdições
 
 ## Contribuição
 Para contribuir com o desenvolvimento do JurIA:
@@ -77,6 +108,8 @@ Para contribuir com o desenvolvimento do JurIA:
 - Tempo de resposta da API (<200ms)
 - Cobertura de testes (>80%)
 - Qualidade de código (medida por ferramentas como SonarQube)
+- **NOVO:** Abrangência e atualização da base de conhecimento internacional (>95%)
+- **NOVO:** Satisfação de usuários especialistas em comércio internacional (>85%)
 
 ---
 

@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+from api.international_law import router as international_law_router
 
 # Criação da aplicação FastAPI
 app = FastAPI(
@@ -18,13 +19,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Incluir o roteador de direito internacional
+app.include_router(
+    international_law_router, 
+    prefix="/api/international-law", 
+    tags=["Direito Internacional"]
+)
+
 @app.get("/")
 async def root():
     """Rota raiz da API que retorna uma mensagem de boas-vindas."""
     return {
         "message": "Bem-vindo à API do JurIA - Sistema de Assistência Jurídica com IA",
         "docs": "/docs",
-        "version": "0.1.0"
+        "version": "0.1.0",
+        "modules": [
+            "Direito Internacional",
+            "Legislação de Singapura",
+            "Políticas Alfandegárias"
+        ]
     }
 
 @app.get("/health")
