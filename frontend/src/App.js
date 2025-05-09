@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Typography, Box, CircularProgress, Paper, Tabs, Tab } from '@mui/material';
 import axios from 'axios';
 import InternationalLawSearch from './components/InternationalLawSearch';
+import CustomsRegulationsSearch from './components/CustomsRegulationsSearch';
+import DocumentAnalyzer from './components/DocumentAnalyzer';
 
 function App() {
   const [apiState, setApiState] = useState({
@@ -39,6 +41,22 @@ function App() {
   
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
+  };
+
+  // Função para renderizar o conteúdo baseado na aba ativa
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 0:
+        return <InternationalLawSearch />;
+      case 1:
+        return <CustomsRegulationsSearch />;
+      case 2:
+        return <DocumentAnalyzer />;
+      case 3:
+        return <Typography>Dashboard em desenvolvimento</Typography>;
+      default:
+        return <Typography>Conteúdo não disponível</Typography>;
+    }
   };
 
   return (
@@ -81,15 +99,14 @@ function App() {
                 scrollButtons="auto"
               >
                 <Tab label="Direito Internacional" />
+                <Tab label="Políticas Alfandegárias" />
+                <Tab label="Análise de Documentos" />
                 <Tab label="Dashboard" disabled />
-                <Tab label="Documentos" disabled />
               </Tabs>
             </Box>
             
             <Box sx={{ p: 2 }}>
-              {activeTab === 0 && <InternationalLawSearch />}
-              {activeTab === 1 && <Typography>Em desenvolvimento</Typography>}
-              {activeTab === 2 && <Typography>Em desenvolvimento</Typography>}
+              {renderTabContent()}
             </Box>
           </Box>
         )}
